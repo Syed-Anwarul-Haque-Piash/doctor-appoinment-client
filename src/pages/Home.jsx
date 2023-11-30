@@ -1,11 +1,15 @@
 import React from 'react'
 import '../App.css'
+//import doctor from  '../assets/images/doctor.jpg'
+import doctor2 from '../assets/images/doctor2.jpg'
+import doctor3 from '../assets/images/doctor3.jpg'
+import doctor4 from '../assets/images/doctor4.jpg'
 
 const Home = () => {
   return (
     <div className='container mx-auto lg:flex md:flex mt-5 mb-5 hero'>
       <div className='flex flex-col lg:flex-row gap-4 items-center justify-between'>
-        <div className='mt-5 mb-10 ml-36 '>
+        <div className='mt-5 mb-10 ml-12 '>
           <div className='lg:w-[576px]'>
             
             <h1 className='text-[36px] leading-[46px] text-emerald-700 font-[800] md:text-[60px] md:leading-[70px]'>World class care <br /> right where <br /> you need it</h1>
@@ -29,6 +33,15 @@ const Home = () => {
               <p className='text-slate-400 italic	'>Patient Satisfaction</p>
              </div>
           </div>
+        </div>
+        <div className='flex gap-6 justify-end'>
+           <div>
+            <img className='w-full h-96' src={doctor2} alt="" />
+           </div>
+           <div>
+              <img className='w-full mb-6 h-48' src={doctor3} alt="" />
+              <img className='w-full h-48' src={doctor4} alt="" />
+           </div>
         </div>
       </div>
 
