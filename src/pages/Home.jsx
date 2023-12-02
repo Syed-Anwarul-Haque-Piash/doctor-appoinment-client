@@ -4,11 +4,17 @@ import '../App.css'
 import doctor2 from '../assets/images/doctor2.jpg'
 import doctor3 from '../assets/images/doctor3.jpg'
 import doctor4 from '../assets/images/doctor4.jpg'
+import find1 from '../assets/images/finddoctor1.png'
+import find2 from '../assets/images/find2.png'
+import find3 from '../assets/images/find3.jpg'
+import { Link } from 'react-router-dom'
+import{BsArrowRight} from 'react-icons/bs'
 
 const Home = () => {
   return (
-    <div className='container mx-auto lg:flex md:flex mt-5 mb-5 hero'>
-      <div className='flex flex-col lg:flex-row gap-4 items-center justify-between'>
+    
+      <div className=''>
+      <div className='flex flex-col lg:flex-row gap-4 items-center justify-between hero'>
         <div className='mt-5 mb-10 ml-12 '>
           <div className='lg:w-[576px]'>
             
@@ -45,7 +51,55 @@ const Home = () => {
         </div>
       </div>
 
+      <section>
+        <div className="container">
+          <div className='lg:w-[470px] mx-auto'>
+            <h2 className='text-center font-extrabold text-4xl'>Providing best medical service</h2>
+            <p className='text-gray-400 text-center mt-3'>World class healthcare provide there <br /> and provide some test and very good <br /> and high profile doctor.</p>
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]'>
+            <div className='py-[30px] px-5'>
+              <div className='flex items-center justify-center'>
+                <img src={find1} alt="" />
+              </div>
+              <div className='mt-[30px]'>
+                <h2 className='text-[25px] leading-9 text-gray-800 font-[700] text-center'>Find a doctor</h2>
+                <p className='text-[16px] leading-7 text-gray-400 font-[400] mt-4 text-center'>World class healthcare provide there <br /> and provide some test and very good <br /> and high profile doctor.</p>
+                <Link to="/doctor" className='w-[44px] h-[44px] rounded-full border border-solid items-center justify-center mt-[30px] mx-auto flex group hover:bg-blue-500'>
+                  <BsArrowRight className='group hover:text-white w-6 h-5'></BsArrowRight>
+                </Link>
+              </div>
+            </div>
+            <div className='py-[30px] px-5'>
+              <div className='flex items-center justify-center'>
+                <img className='w-60 h-56' src={find2} alt="" />
+              </div>
+              <div className='mt-[30px]'>
+                <h2 className='text-[25px] leading-9 text-gray-800 font-[700] text-center'>Find a location</h2>
+                <p className='text-[16px] leading-7 text-gray-400 font-[400] mt-4 text-center'>World class healthcare provide there <br /> and provide some test and very good <br /> and high profile doctor.</p>
+                <Link to="/doctor" className='w-[44px] h-[44px] rounded-full border border-solid items-center justify-center mt-[30px] mx-auto flex group hover:bg-blue-500'>
+                  <BsArrowRight className='group hover:text-white w-6 h-5'></BsArrowRight>
+                </Link>
+              </div>
+            </div>
+            <div className='py-[30px] px-5'>
+              <div className='flex items-center justify-center'>
+                <img className='w-56 h-56' src={find3} alt="" />
+              </div>
+              <div className='mt-[30px]'>
+                <h2 className='text-[25px] leading-9 text-gray-800 font-[700] text-center'>Book Appoinment</h2>
+                <p className='text-[16px] leading-7 text-gray-400 font-[400] mt-4 text-center'>World class healthcare provide there <br /> and provide some test and very good <br /> and high profile doctor.</p>
+                <Link to="/doctor" className='w-[44px] h-[44px] rounded-full border border-solid items-center justify-center mt-[30px] mx-auto flex group hover:bg-blue-500'>
+                  <BsArrowRight className='group hover:text-white w-6 h-5'></BsArrowRight>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
+    
   )
 }
 
