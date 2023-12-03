@@ -9,6 +9,7 @@ import find2 from '../assets/images/find2.png'
 import find3 from '../assets/images/find3.jpg'
 import { Link } from 'react-router-dom'
 import{BsArrowRight} from 'react-icons/bs'
+import About from '../components/About/About'
 
 const Home = () => {
   return (
@@ -97,7 +98,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      <About/>
     </div>
     
   )
