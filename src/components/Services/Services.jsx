@@ -1,4 +1,5 @@
 import React from 'react'
+import ServiceList from './ServiceList'
 
 const Services = () => {
   return (
@@ -10,6 +11,7 @@ const Services = () => {
                      and provide some test and very good
                     and high profile doctor.</p>
             </div>
+            <ServiceList></ServiceList>
         </div>
     </section>
   )
