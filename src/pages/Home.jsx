@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom'
 import{BsArrowRight} from 'react-icons/bs'
 import About from '../components/About/About'
 import Services from '../components/Services/Services'
+import Doctors from '../components/Doctor/Doctors'
 
 const Home = () => {
   return (
@@ -101,6 +102,7 @@ const Home = () => {
       </section>
       <About/>
       <Services></Services>
+      <Doctors/>
     </div>
     
   )
