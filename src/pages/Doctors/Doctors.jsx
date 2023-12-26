@@ -1,4 +1,5 @@
 import React from 'react'
+import DoctorList from '../../components/Doctor/DoctorList'
 
 const Doctors = () => {
   return (
@@ -8,11 +9,16 @@ const Doctors = () => {
         <h2 className='text-2xl font-bold'>Find A Doctor</h2>
         <div className='max-w-[570px] mt-[30px] mx-auto bg-[#0066ff2c] rounded-md flex items-center justify-between'>
           <input type="search" 
-          className='py-4 pl-4 pr-2 bg-transparent w-full focus:outline-none cursor:pointer '
+          className='p-4 mt-0  bg-transparent w-full focus:outline-none cursor:pointer '
           placeholder='Search'
            />
+           <button className='bg-sky-600 text-white mt-0 p-4 rounded-lg'>Search</button>
         </div>
       </div>
+    </section>
+
+    <section>
+      <DoctorList></DoctorList>
     </section>
     </>
   )
