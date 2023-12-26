@@ -17,7 +17,7 @@ const Doctors = () => {
       </div>
     </section>
 
-    <section>
+    <section className='container'>
       <DoctorList></DoctorList>
     </section>
     </>

@@ -1,3 +1,6 @@
 .hero{
   background-image: url(./assets/images/trans.jpg);
 }
+.container{
+  margin: auto;
+}
