@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import doctor2 from '../../assets/images/doctor2.jpg'
+import staricon from '../../assets/images/staricon.png'
 
 const DoctorDetails = () => {
+  const [tab,setTab]=useState('active')
   return (
     <div>
       <div className='max-w-[1170px] px-5 mx-auto' >
@@ -11,6 +13,21 @@ const DoctorDetails = () => {
               <figure className='max-w-[200px] max-h-[200px]'>
                 <img src={doctor2} alt="" className='w-full' />
               </figure>
+              <div>
+                <span className='bg-[#CCF0F3] text-blue-400 py-1 px-6 lg:py-2 lg:px-6 text-[12px] lg:text-[16px] font-semibold rounded'>Sergoen</span>
+                <h3 className='text-black text-[22px] mt-3 font-bold'>Syed Anwarul Haqur Piash</h3>
+                <div className='flex items-center gap-[6px]'>
+                  <span className='flex items-center gap-[6px] text-[14px] lg:text-[16px] font-semibold text-black'>
+                    <img className='w-[20px] h-[20px]' src={staricon} alt="" />4.6
+                  </span>
+                  <span className='text-[14px] lg:text-[16px] font-[400] text-gray-400'>(272)</span>
+                </div>
+                <p className='text-gray-400 text-[14px] md:text-[15px] '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque similique temporibus sed distinctio cumque nemo vero ipsa hic excepturi perferendis.</p>
+              </div>
+            </div>
+            <div className='mt-[50px] border-b border-solid border-blue-200'>
+              <button onClick={()=>setTab('active')} className={`${tab==='active' && 'border-b border-solid border-blue-900'}py-2 px-5 mr-5 text-[16px] text-black font-semibold`}>About</button>
+               <button onClick={()=>setTab('feedback')} className={`${tab==='feedback' && 'border-b border-solid border-blue-400'}py-2 px-5 mr-5 text-[16px] text-black font-semibold`}>Feedback</button>
             </div>
           </div>
         </div>
