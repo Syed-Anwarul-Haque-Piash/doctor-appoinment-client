@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import doctor2 from '../../assets/images/doctor2.jpg'
 import staricon from '../../assets/images/staricon.png'
+import DoctorAbout from './DoctorAbout'
+import Feedback from './Feedback'
 
 const DoctorDetails = () => {
-  const [tab,setTab]=useState('active')
+  const [tab,setTab]=useState('about')
   return (
     <div>
       <div className='max-w-[1170px] px-5 mx-auto' >
@@ -25,9 +27,13 @@ const DoctorDetails = () => {
                 <p className='text-gray-400 text-[14px] md:text-[15px] '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque similique temporibus sed distinctio cumque nemo vero ipsa hic excepturi perferendis.</p>
               </div>
             </div>
-            <div className='mt-[50px] border-b border-solid border-blue-200'>
-              <button onClick={()=>setTab('active')} className={`${tab==='active' && 'border-b border-solid border-blue-900'}py-2 px-5 mr-5 text-[16px] text-black font-semibold`}>About</button>
-               <button onClick={()=>setTab('feedback')} className={`${tab==='feedback' && 'border-b border-solid border-blue-400'}py-2 px-5 mr-5 text-[16px] text-black font-semibold`}>Feedback</button>
+            <div className='mt-[50px] border-b border-solid border-gray-400-200'>
+              <button onClick={()=>setTab('about')} className={`${tab==='active' && 'border-b border-solid border-gray-900'}py-2 px-5 mr-5 text-[16px] text-black font-semibold`}>About</button>
+               <button onClick={()=>setTab('feedback')} className={`${tab==='feedback' && 'border-b border-solid border-gray-900'}py-2 px-5 mr-5 text-[16px] text-black font-semibold`}>Feedback</button>
+            </div>
+            <div className='mt-[50px]'>
+              {tab==='about' && <DoctorAbout/>}
+              {tab==='feedback' && <Feedback/>}
             </div>
           </div>
         </div>
