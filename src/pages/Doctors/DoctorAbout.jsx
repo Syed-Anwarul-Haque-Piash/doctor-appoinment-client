@@ -15,19 +15,27 @@ const DoctorAbout = () => {
           <ul className='pt-4 md:p-5'>
             <li className='flex flex-col sm:flex-row sm:justify-between sm:items-end md:gap-5 mb-[30px]'>
               <div>
-                <span className='text-blue-600 text-[15px] font-semibold'>3 Jan,2024</span>
+                <span className='text-blue-600 text-[15px] font-semibold'>3 Jan,2020</span>
                 <p className='text-[16px] font-medium text-gray-500'>FCPS,Surgery</p>
               </div>
               <p className='text-[14px] font-medium text-gray-500'>Mymensingh Medical College Hospital</p>
             </li>
             <li className='flex flex-col sm:flex-row sm:justify-between sm:items-end md:gap-5 mb-[30px]'>
               <div>
-                <span className='text-blue-600 text-[15px] font-semibold'>3 Jan,2024</span>
+                <span className='text-blue-600 text-[15px] font-semibold'>3 Jan,2020</span>
                 <p className='text-[16px] font-medium text-gray-500'>FCPS,Surgery</p>
               </div>
               <p className='text-[14px] font-medium text-gray-500'>Mymensingh Medical College Hospital</p>
             </li>
           </ul>
+        </div>
+        <div className='mt-12'>
+        <h3 className='text-[20px] text-black font-semibold'>Experience</h3>
+        <ul className='grid sm:grid-cols-2 gap-[30px] pt-4 md:p-5'>
+          <li className='p-4 rounded bg-[#fff9ea]'>
+            <span className='text-red-400 text-[15px] font-semibold'>9 jan,2020-present</span>
+          </li>
+        </ul>
         </div>
     </div>
   )
