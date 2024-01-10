@@ -33,7 +33,14 @@ const DoctorAbout = () => {
         <h3 className='text-[20px] text-black font-semibold'>Experience</h3>
         <ul className='grid sm:grid-cols-2 gap-[30px] pt-4 md:p-5'>
           <li className='p-4 rounded bg-[#fff9ea]'>
-            <span className='text-red-400 text-[15px] font-semibold'>9 jan,2020-present</span>
+            <span className='text-red-400 text-[15px] font-semibold'>9 jan,2020 - present</span>
+            <p className='text-[16px] font-medium text-gray-500'>Assistant professor</p>
+            <p className='text-[14px] font-medium text-gray-500'>Mymensingh Medical College Hospital</p>
+          </li>
+          <li className='p-4 rounded bg-[#fff9ea]'>
+            <span className='text-red-400 text-[15px] font-semibold'>9 jan,2021 - present</span>
+            <p className='text-[16px] font-medium text-gray-500'>professor</p>
+            <p className='text-[14px] font-medium text-gray-500'>Mymensingh Medical College Hospital</p>
           </li>
         </ul>
         </div>
